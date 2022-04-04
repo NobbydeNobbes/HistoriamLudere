@@ -1,0 +1,160 @@
+@import "mixins";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+body{
+    background-color: #222225;
+    
+    
+    
+
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    
+    
+
+    #normandWhite{
+        width: 5rem;
+        position: absolute;
+        margin-right: 5rem;
+        margin-left: 100rem;
+        margin-top: 5rem;
+    }
+
+    #search-bar{
+        width:15rem;
+        height:2.5rem;
+        border-radius: 0.5rem;
+        margin-top: 5.7rem;
+        margin-left: 15rem;
+        position:absolute;
+        font-size: 1rem;
+        @include font;
+        color:black;
+        
+    }
+    
+    .menu{
+        
+        @include font;
+        color: white;
+        font-size: 2rem; 
+        
+        
+        a{
+            @include link;
+            
+        }
+        
+    
+    }
+
+    .menu-item{
+        padding: 2rem;
+        list-style-type:none;
+        border-color: white;
+        width:12%;
+        
+    }
+
+    .menu-item:hover{
+        font-size: 2.5rem;
+        
+    }
+
+    // .li:hover{
+    //     font-size: 3rem;
+    // }
+    
+    .title{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        background: linear-gradient(#4f4f74, #393952, #282839, #222225);
+        color:white;
+        
+        .character-display{
+
+            p{
+                @include font;
+            }
+        }
+        
+       a{
+           @include link;
+           align-self:center;
+       }
+
+        h1{
+          align-self:center;
+          @include font;
+          font-size: 85px;
+          margin-bottom: 0;
+          
+        }
+        h2{
+            align-self: center;
+            @include font;
+            margin-top: 0;
+        }
+
+        
+    }
+    .about{
+        @include font;
+        color:white;
+        width: 40%;
+        position:absolute; 
+        margin-left: 40rem;
+        margin-top: 20rem;
+        font-size: 1.5rem;
+    }
+    
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 19rem;
+    margin-left: 54rem;
+    width:35rem;
+    #firstname{
+        @include font;
+        width:10rem;
+        margin: 0.5rem;
+    }
+    #lastname{
+        @include font;
+        width:10rem;
+    }
+    #email{
+        @include font;
+        width:12rem;
+    }
+    #email-body{
+        @include font;
+        width:35rem;
+        height:33rem;
+        
+    }
+    #submit-button{
+        @include font;
+        width:15rem;
+        height:3rem;
+        background-color: #36364D;
+        color:white;
+    }
+    #submit-button:hover{
+        background-color: white;
+        color:#36364D;
+    }
+
+
+}
+
